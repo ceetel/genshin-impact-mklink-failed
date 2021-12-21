@@ -1,0 +1,25 @@
+7z x 国内服→国际服* -o"Genshin Impact Game GL"
+set genshindir=C:\Users\talls\AppData\Local\Programs\Genshin Impact
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\Managed\Resources" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\Managed\Resources"
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\Native\Data\etc" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\Native\Data\etc"
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\Native\Data\Resources" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\Native\Data\Resources"
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\Persistent" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\Persistent"
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\Plugins\locales" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\Plugins\locales"
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\StreamingAssets\AssetBundles" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\StreamingAssets\AssetBundles"
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\StreamingAssets\Audio" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\StreamingAssets\Audio"
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\StreamingAssets\Chroma" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\StreamingAssets\Chroma"
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\StreamingAssets\kcp" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\StreamingAssets\kcp"
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\StreamingAssets\MiHoYoSDKRes" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\StreamingAssets\MiHoYoSDKRes"
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\StreamingAssets\Persistent" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\StreamingAssets\Persistent"
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\StreamingAssets\VideoAssets" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\StreamingAssets\VideoAssets"
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\StreamingAssets\xlua" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\StreamingAssets\xlua"
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\Resources" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\Resources"
+mklink /j "%genshindir%\Genshin Impact Game GL\GenshinImpact_Data\webCaches" "%genshindir%\Genshin Impact Game CN\YuanShen_Data\webCaches"
+
+xcopy /d /y "Genshin Impact Game CN\YuanShen_Data\Plugins\*" "Genshin Impact Game GL\GenshinImpact_Data\Plugins\"
+xcopy /d /y "Genshin Impact Game CN\YuanShen_Data\StreamingAssets\*" "Genshin Impact Game GL\GenshinImpact_Data\StreamingAssets\"
+xcopy /d /y "Genshin Impact Game CN\YuanShen_Data\*" "Genshin Impact Game GL\GenshinImpact_Data\"
+xcopy /y "Genshin Impact Game CN\YuanShen_Data\Managed\SymbolMap" "Genshin Impact Game GL\GenshinImpact_Data\Managed\SymbolMap"
+xcopy /y "Genshin Impact Game CN\YuanShen_Data\Native\Data\SymbolMap" "Genshin Impact Game GL\GenshinImpact_Data\Native\Data\SymbolMap"
+
+
